@@ -22,27 +22,31 @@ app.get(['/','/home'],(req,res)=>{
 
 app.get('/about',(req,res)=>{
     res.render('about');
-})
+});
 
 app.get('/consultant',(req,res)=>{
     res.render('consultant');
-})
+});
 
 app.get('/video',(req,res)=>{
     res.render('video');
-})
+});
 
 app.get('/question',(req,res)=>{
     res.render('question');
-})
+});
 
 app.get('/blog',(req,res)=>{
     res.render('blog');
-})
+});
 
 app.get('/you',(req,res)=>{
     res.render('you');
-})
+});
+
+app.get('/sign-up',(req,res)=>{
+    res.render('sign-up');
+});
 
 //set server
 app.set('port', (process.env.PORT||5000));
