@@ -48,6 +48,18 @@ app.get('/sign-up',(req,res)=>{
     res.render('sign-up');
 });
 
+app.get('/blog-single',(req,res)=>{
+    res.render('blog-single');
+});
+
+app.get('/video-single',(req,res)=>{
+    res.render('video-single');
+});
+
+app.get('/question-single',(req,res)=>{
+    res.render('question-single');
+});
+
 //set server
 app.set('port', (process.env.PORT||5000));
 
